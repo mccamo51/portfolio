@@ -40,7 +40,7 @@ export default function ProfileSidebar() {
   ];
 
   return (
-    <div className="w-80 min-h-screen bg-card border-r border-card-border p-6">
+    <div className="w-80 h-screen bg-card border-r border-card-border p-6 fixed left-0 top-0 overflow-y-auto">
       <Card className="p-6 mb-8 bg-card border-card-border">
         <div className="text-center">
           <div className="relative mb-6">
