@@ -29,7 +29,7 @@ function Portfolio() {
       setTimeout(() => {
         setIsTransitioning(false);
       }, 50);
-    }, 200);
+    }, 300);
   };
 
   const renderContent = () => {
@@ -65,7 +65,7 @@ function Portfolio() {
     <div className="min-h-screen bg-background text-foreground">
       <ProfileSidebar />
       
-      <main className={`ml-80 min-h-screen overflow-y-auto transition-all duration-700 ease-out ${
+      <main className={`ml-80 h-screen overflow-y-auto transition-all duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}>
         <div className="p-8 lg:p-12">

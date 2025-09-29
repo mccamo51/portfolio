@@ -15,13 +15,15 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
   ];
 
   return (
-    <nav className="mb-8">
-      <div className="flex gap-8">
+    <nav className="mb-8" role="tablist">
+      <div className="flex gap-8 relative">
         {tabs.map((tab) => (
           <button
             key={tab.id}
+            role="tab"
+            aria-selected={activeTab === tab.id}
             onClick={() => onTabChange(tab.id)}
-            className={`text-lg font-medium py-2 px-1 relative transition-colors duration-200 ${
+            className={`text-lg font-medium py-2 px-1 relative transition-all duration-300 hover-elevate focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
               activeTab === tab.id
                 ? "text-primary"
                 : "text-muted-foreground hover:text-foreground"
@@ -30,7 +32,7 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
           >
             {tab.label}
             {activeTab === tab.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full transition-all duration-300 ease-out animate-in slide-in-from-left-2"></div>
             )}
           </button>
         ))}
