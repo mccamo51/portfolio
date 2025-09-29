@@ -9,6 +9,8 @@ import AboutSection from "@/components/AboutSection";
 import ResumeSection from "@/components/ResumeSection";
 import ContactSection from "@/components/ContactSection";
 import PortfolioSection from "@/components/PortfolioSection";
+import MobileProfileHeader from "@/components/MobileProfileHeader";
+import MobileNavigation from "@/components/MobileNavigation";
 
 function Portfolio() {
   const [activeTab, setActiveTab] = useState("about");
@@ -63,13 +65,18 @@ function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Desktop Sidebar */}
       <ProfileSidebar />
       
-      <main className={`ml-80 h-screen overflow-y-auto transition-all duration-700 ease-out ${
+      {/* Mobile Profile Header */}
+      <MobileProfileHeader />
+      
+      <main className={`lg:ml-80 h-screen overflow-y-auto transition-all duration-700 ease-out ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}>
-        <div className="p-8 lg:p-12">
+        <div className="p-4 lg:p-8 xl:p-12 pb-20 lg:pb-8">
           <div className="max-w-4xl">
+            {/* Desktop Navigation */}
             <Navigation activeTab={activeTab} onTabChange={handleTabChange} />
             
             <div className={`transition-all duration-300 ease-in-out transform ${
@@ -84,6 +91,9 @@ function Portfolio() {
           </div>
         </div>
       </main>
+      
+      {/* Mobile Bottom Navigation */}
+      <MobileNavigation activeTab={activeTab} onTabChange={handleTabChange} />
     </div>
   );
 }

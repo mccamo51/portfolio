@@ -15,7 +15,7 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
   ];
 
   return (
-    <nav className="mb-8" role="tablist">
+    <nav className="hidden lg:block mb-8" role="tablist">
       <div className="flex gap-8 relative">
         {tabs.map((tab) => (
           <button
