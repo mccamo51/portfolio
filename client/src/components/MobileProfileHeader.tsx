@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { ChevronDown, ChevronUp, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
-import avatarImage from "@assets/generated_images/Professional_developer_avatar_portrait_751c21fb.png";
+import avatarImage from "@assets/generated_images/me.png";
 
 interface ContactItem {
   icon: React.ComponentType<{ className?: string }>;
@@ -22,23 +22,23 @@ export default function MobileProfileHeader() {
     {
       icon: Mail,
       label: "EMAIL",
-      value: "aakashrajbanshi58.."
+      value: "mccamo51@gmail.com"
     },
     {
       icon: Phone,
       label: "PHONE", 
-      value: "+977 9812345678"
+      value: "+233 551956998"
     },
     {
       icon: MapPin,
       label: "LOCATION",
-      value: "Kathmandu, Nepal"
+      value: "Accra, Ghana"
     }
   ];
 
   const socialLinks: SocialLink[] = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Github, href: "#", label: "GitHub" },
+     { icon: Linkedin, href: "https://linkedin.com/in/bismark-amo-b1b852189", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/mccamo51", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" }
   ];
 
@@ -51,7 +51,7 @@ export default function MobileProfileHeader() {
               <div className="relative">
                 <img
                   src={avatarImage}
-                  alt="Aakash Rajbanshi"
+                  alt="Bismark A. Amo"
                   className="w-16 h-16 rounded-xl object-cover"
                   data-testid="img-mobile-profile-avatar"
                 />
@@ -60,7 +60,7 @@ export default function MobileProfileHeader() {
               
               <div>
                 <h1 className="text-xl font-semibold text-card-foreground" data-testid="text-mobile-profile-name">
-                  Aakash Rajbanshi
+                  Bismark A. Amo
                 </h1>
                 <p className="text-muted-foreground text-sm" data-testid="text-mobile-profile-title">
                   Software Developer

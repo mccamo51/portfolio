@@ -3,80 +3,107 @@ import TimelineItem from "./TimelineItem";
 export default function ResumeSection() {
   const education = [
     {
-      institution: "Nishareeka College Of Management And Information Technology",
-      degree: "Bachelor of Science in Computer Science and Information Technology (B.Sc. CSIT)",
-      period: "2017 — 2021",
-      location: ""
+      institution: "Kwame Nkrumah University of Science and Technology",
+      degree: "BSc Computer Science",
+      period: "Oct. 2022 — Sep. 2024",
+      location: "Kumasi, Ghana"
     },
     {
-      institution: "Greenland International College",
-      degree: "+2 Science",
-      period: "2015 — 2017",
-      location: ""
+      institution: "Koforidua Technical University",
+      degree: "HND Computer Science",
+      period: "Aug. 2016 — Aug. 2019",
+      location: "Eastern Region, Ghana"
     }
   ];
 
   const experience = [
     {
-      position: "Mid-Level Flutter Developer",
-      company: "Tekma Technologies",
-      period: "Aug. 2024 — Feb. 2025 • 7 mos",
-      location: "Kathmandu, Nepal",
+      position: "Full-Stack Engineer",
+      company: "Payswitch Company LTD",
+      period: "Sep. 2021 — Present • 4+ yrs",
+      location: "East Legon, Accra, Ghana",
       details: [
-        "Developed new features and implemented UI designs into code using Flutter.",
-        "Designed and created custom e-form features including scrolling features and data entries.",
-        "Integrated Google and Facebook sign-in for user authentication.",
-        "Designed dynamic functionalities using the BLOC design pattern.",
-        "Integrated APIs for seamless data communication and backend integration.",
-        "Implemented payment gateway integration like Khalti for secure transactions.",
-        "Collaborated with other developers and backend team for scalable features.",
-        "Participated in team meetings to discuss new features and project updates."
+        "Developed Telapay iOS app for merchants to collect payments and generate payment links using Flutter.",
+        "Built the Telapay Dashboard in collaboration with MTN for payment recording, transaction reports, and branch management using React, Tailwind, Redux, and Next.js.",
+        "Created PaySwitch payment checkout plugin using Flutter.",
+        "Designed backend services for invoice system using Node.js, MongoDB, and Redis, managing hundreds of daily requests.",
+        "Developed mPOS Application with Flutter and Native Android XML for smart card transactions (EMV integration).",
+        "Built Vending Machine App with Flutter and Android for MDB-based vending operations.",
+        "Implemented EMV Parser using Node.js + TypeScript for ISO 8583 chip data extraction and parsing.",
+        "Provided leadership and mentorship to development team, fostering collaboration and professional growth.",
+        "Established robust CI/CD pipeline with pull requests, code reviews, load testing, and comprehensive testing strategies."
       ]
     },
     {
-      position: "Flutter Developer Intern",
-      company: "YAJ Tech Pvt. Ltd",
-      period: "May. 2022 — Sep. 2022 • 5 mos",
-      location: "Kathmandu, Nepal",
+      position: "Mobile Application Developer",
+      company: "Spectra Health Imaging",
+      period: "Oct. 2023 — Jan. 2024 • 4 mos",
+      location: "Patasi, Kumasi, Ghana",
       details: [
-        "Assisted in developing and maintaining Flutter applications, ensuring seamless functionality and user-friendly interfaces.",
-        "Supported the implementation of visually appealing UI designs that aligned with client requirements and design principles.",
-        "Collaborated with cross-functional teams, including back-end developers and designers, to deliver efficient, high-quality, and scalable solutions.",
-        "Gained hands-on experience in debugging, troubleshooting, and refining app features to improve user experience."
+        "Built mobile app for radiology appointment management and diagnostic report access using Flutter and Provider state management.",
+        "Delivered solution for both iOS and Android platforms with seamless user experience."
       ]
-    }
-  ];
-
-  //todo: remove mock functionality - replace with real data from backend/database
-  const moreExperience = [
+    },
     {
-      position: "Senior Software Engineer",
-      company: "Tech Solutions Inc.",
-      period: "Oct. 2022 — Aug. 2024 • 1yr, 11 mos",
-      location: "Kathmandu, Nepal",
+      position: "Mobile Application Developer",
+      company: "Kost Konsult & Solutions Ltd",
+      period: "Jun. 2023 — Oct. 2023 • 5 mos",
+      location: "Accra, Ghana",
       details: [
-        "Developed new features and transformed UI designs into fully functional user interfaces.",
-        "Integrated payment solution like eSewa for secure and seamless transactions.",
-        "Optimized application performance to ensure a smooth and engaging user experience.",
-        "Supported other team members initiatives by developing solutions to common problems and sharing those learnings.",
-        "Identified and resolved bugs, improving app stability and performance.",
-        "Wrote clean, maintainable, and testable code following best practices.",
-        "Utilization of latest version of support libraries to ensure backend compatibility.",
-        "Integrated payment solution like eSewa for secure and seamless transactions.",
-        "Collaborated with backend developers, designers, and cross-functional teams to deliver scalable, high-quality solutions.",
-        "Performed code review and deployed the app in Playstore and Appstore."
+        "Developed fuel purchasing and payment app with QR code scanning for secure payments.",
+        "Implemented loyalty point system, nearby station locator, and fuel gifting features.",
+        "Created user-friendly experience with integrated payment system for iOS and Android."
+      ]
+    },
+    {
+      position: "Mobile Application Developer",
+      company: "JPGhana",
+      period: "Feb. 2023 — Apr. 2023 • 3 mos",
+      location: "Accra, Ghana",
+      details: [
+        "Built mobile app enabling fuel purchases using loyalty points and cash.",
+        "Integrated seamlessly with existing loyalty systems for point redemption.",
+        "Developed intuitive interface for Android platform."
+      ]
+    },
+    {
+      position: "Frontend Engineer",
+      company: "Javolin Group",
+      period: "Dec. 2021 — Feb. 2024 • 2+ yrs",
+      location: "Atlanta, Georgia, USA (Remote)",
+      details: [
+        "Built comprehensive forex trading platform using React, Tailwind, and Redux with real-time exchange rates and advanced charting.",
+        "Developed mobile version of trading platform using Flutter with responsive user experience.",
+        "Created fintech app with money transfer, airtime purchase, and financial services using Flutter for iOS."
+      ]
+    },
+    {
+      position: "Mobile Application Developer",
+      company: "Oya Ghana",
+      period: "Sep. 2021 — Oct. 2022 • 1+ yr",
+      location: "Accra, Ghana",
+      details: [
+        "Developed bus ticketing platform using Flutter for route searching, seat selection, and secure payments.",
+        "Implemented real-time seat availability, booking history, and e-ticket generation.",
+        "Delivered responsive interface for both iOS and Android platforms."
+      ]
+    },
+    {
+      position: "Mobile Application Developer",
+      company: "Gitplus Company Limited",
+      period: "Aug. 2019 — Feb. 2021 • 1+ yr",
+      location: "Ghana",
+      details: [
+        "Created Telehealth solution using Flutter for remote medical consultations.",
+        "Implemented video calls, messaging, appointment management, and electronic health records.",
+        "Ensured secure patient data protection with robust security measures for iOS and Android."
       ]
     }
   ];
 
   return (
     <div className="space-y-12">
-      <div>
-        <h2 className="text-3xl font-bold text-foreground mb-8 relative" data-testid="text-resume-title">
-          Resume
-          <div className="absolute bottom-0 left-0 w-12 h-1 bg-primary rounded-full mt-2"></div>
-        </h2>
-      </div>
+  
 
       <div>
         <div className="flex items-center gap-3 mb-8">
@@ -113,7 +140,7 @@ export default function ResumeSection() {
         </div>
         
         <div>
-          {[...experience, ...moreExperience].map((exp, index) => (
+          {experience.map((exp, index) => (
             <TimelineItem
               key={index}
               type="experience"
