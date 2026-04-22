@@ -43,6 +43,14 @@ import Fundstart1 from "../../../attached_assets/generated_images/fundstart1.png
 import Fundstart2 from "../../../attached_assets/generated_images/fundstart2.png";
 import Fundstart3 from "../../../attached_assets/generated_images/fundstart3.png";
 import Fundstart4 from "../../../attached_assets/generated_images/fundstart4.png";
+import SpectraLogin from "../../../attached_assets/generated_images/Login.png"
+import SpectraDashboard from "../../../attached_assets/generated_images/Dashboard.png"
+import SpectraAna from "../../../attached_assets/generated_images/Ana.png"
+import LartmanLogin from "../../../attached_assets/generated_images/LartmanLogin.png"
+import LartmanOverview from "../../../attached_assets/generated_images/Lartman.png"
+import LartmanFarm from "../../../attached_assets/generated_images/Farms.png"
+import LartmanTrain from "../../../attached_assets/generated_images/Training.png"
+
 
 type ProjectCategory = "all" | "application" | "web" | "ui/ux";
 
@@ -249,6 +257,30 @@ export default function PortfolioSection() {
       githubUrl: "#",
       category: "application",
       gallery: [Golf, Golf3, Golf4], // Additional screenshots
+    },
+
+    {
+      title: "SpectraRis",
+      description:
+        "A Radiology system for managing Appointment booked by Doctors",
+      image: SpectraLogin,
+      technologies: ["Remix", "zustand", "Ntify", "Docker"],
+      liveUrl: "https://spectraris.com",
+      githubUrl: "#",
+      category: "web",
+      gallery: [SpectraLogin, SpectraDashboard, SpectraAna], // Additional screenshots
+    },
+
+      {
+      title: "Lartman Farms",
+      description:
+        "A System form managing fish farmers, Farms and Stock inventory",
+      image: LartmanLogin,
+      technologies: ["NextJs", "zustand"],
+      liveUrl: "lartmandashboard.netlify.app/",
+      githubUrl: "#",
+      category: "web",
+      gallery: [LartmanLogin,LartmanFarm, LartmanOverview, LartmanTrain], // Additional screenshots
     },
   ];
 
